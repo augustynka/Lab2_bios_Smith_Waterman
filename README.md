@@ -29,7 +29,7 @@ Podanie wartości gap - ilość punktów karnych za przerwę w sekwencji.
 Podanie wartości mismatch - ilość punktów za elementy niedopasowanie w sekwencji.
 Podanie wartości match - ilość punktów za elementy pokrywające się w sekwencji.
 Odczyt z pliku FASTA.
-sprawdzenie, czy plik zawiera dwie sekwencje
+- sprawdzenie, czy plik zawiera dwie sekwencje
 Przeprowadzenie algorytmu Smith-Waterman:
 H i j = max{H i-1, j-1 + s(a i, b j ); H i-k, j - W k ; H i, j-1 - W 1 ;0}
 Algorytm działa na macierzy o wymiarach i,j (długości sekwencji), początkowo wypełnionej zerami w pierwszej kolumnie i pierwszym wierszu.
