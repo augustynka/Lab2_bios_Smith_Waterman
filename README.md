@@ -1,29 +1,28 @@
-Algorytm Smitha-Watermana
-odnoszący się do dopasowań lokalnych w sekwencjach algorytm programowania dynamicznego, który sprawdza optymalne dopasowanie dwóch sekwencji.
+**Algorytm Smitha-Watermana
+odnoszący się do dopasowań lokalnych w sekwencjach algorytm programowania dynamicznego, który sprawdza optymalne dopasowanie dwóch sekwencji.**
 
-Wykorzystane biblioteki i paczki: BioPython (SeqIO) oraz os
+Wykorzystane biblioteki i paczki: **BioPython (SeqIO) oraz os**
 
-Dane wejściowe: 
-plik FASTA z rozszerzeniem .fa lub.fasta zawierający dwie sekwencje; 
-wartość gap;
-wartość mismatch; 
-wartość match.
+**Dane wejściowe:** 
+- plik FASTA z rozszerzeniem .fa lub.fasta zawierający dwie sekwencje; 
+- wartość gap;
+- wartość mismatch; 
+- wartość match.
 
 Dane wyjściowe: plik .txt z wynikami dopasowania w formie zmodyfikowanych sekwencji oraz wyniku punktowego.
 
 
-Sposób użycia programu: 
+**Sposób użycia programu:** 
 
-Uruchom program w terminalu lub interpreterze Pythona.
-Program poprosi o podanie nazwy pliku FASTA zawierającego dwie sekwencje. Plik powinien być w formacie FASTA i posiadać rozszerzenie ".fa" lub ".fasta".
-Jeśli plik o podanej nazwie istnieje, program poprosi Cię o podanie trzech parametrów wartości liczbowych:
-gap
-mismatch
-match
-Program przeprowadzi dopasowanie sekwencji z użyciem algorytmu Smitha-Watermana i zapisze wynik dopasowania i wartość maksymalnego wyniku (score) do pliku "alignment_result.txt". 
+**1.** Uruchom program w terminalu lub interpreterze Pythona.
+**2.** Program poprosi o podanie nazwy pliku FASTA zawierającego dwie sekwencje. Plik powinien być w formacie FASTA i posiadać rozszerzenie ".fa" lub ".fasta".
+**3.** Jeśli plik o podanej nazwie istnieje, program poprosi Cię o podanie trzech parametrów wartości liczbowych:
+- gap
+- mismatch
+- match
+**4.** Program przeprowadzi dopasowanie sekwencji z użyciem algorytmu Smitha-Watermana i zapisze wynik dopasowania i wartość maksymalnego wyniku (score) do pliku "alignment_result.txt". 
 
-Działanie programu:
-
+**Działanie programu:**
 Podanie nazwy pliku.
 Program weryfikuje poprawność wprowadzonych danych.
 Podanie wartości gap - ilość punktów karnych za przerwę w sekwencji.
@@ -48,8 +47,7 @@ Wynikiem pożądanym jest najwyższy możliwy score.
 
 
 
-Przykład użycia 
- 
+**Przykład użycia** 
 Wprowadzenie danych:
 C:\Users\Patrycja\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\Patrycja\PycharmProjects\pythonProject\main.py 
 Podaj nazwę pliku FASTA (z rozszerzeniem fa lub fasta): C:\Users\Patrycja\Downloads\seq1.fasta
