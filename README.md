@@ -27,20 +27,14 @@ Dane wyjściowe: plik .txt z wynikami dopasowania w formie zmodyfikowanych sekwe
 
 
 **Działanie programu:**
-Podanie nazwy pliku.
-
-Program weryfikuje poprawność wprowadzonych danych.
-
-Podanie wartości gap - ilość punktów karnych za przerwę w sekwencji.
-
-Podanie wartości mismatch - ilość punktów za elementy niedopasowanie w sekwencji.
-
-Podanie wartości match - ilość punktów za elementy pokrywające się w sekwencji.
-
-Odczyt z pliku FASTA.
-- sprawdzenie, czy plik zawiera dwie sekwencje
-
-Przeprowadzenie algorytmu Smith-Waterman:
+- Podanie nazwy pliku.
+- Program weryfikuje poprawność wprowadzonych danych.
+- Podanie wartości gap - ilość punktów karnych za przerwę w sekwencji.
+- Podanie wartości mismatch - ilość punktów za elementy niedopasowanie w sekwencji.
+- Podanie wartości match - ilość punktów za elementy pokrywające się w sekwencji.
+- Odczyt z pliku FASTA.
+- Sprawdzenie, czy plik zawiera dwie sekwencje
+- Przeprowadzenie algorytmu Smith-Waterman:
 H i j = max{H i-1, j-1 + s(a i, b j ); H i-k, j - W k ; H i, j-1 - W 1 ;0}
 
 Algorytm działa na macierzy o wymiarach i,j (długości sekwencji), początkowo wypełnionej zerami w pierwszej kolumnie i pierwszym wierszu.
@@ -60,12 +54,16 @@ Wynikiem pożądanym jest najwyższy możliwy score.
 
 
 **Przykład użycia** 
-Wprowadzenie danych:
-C:\Users\Patrycja\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\Patrycja\PycharmProjects\pythonProject\main.py 
+Wprowadzenie danych: C:\Users\Patrycja\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\Patrycja\PycharmProjects\pythonProject\main.py 
+
 Podaj nazwę pliku FASTA (z rozszerzeniem fa lub fasta): C:\Users\Patrycja\Downloads\seq1.fasta
+
 Podaj wartość gap: -2
+
 Podaj wartość mismatch: -1
+
 Podaj wartość match: 1
+
 Wynik dopasowania zapisany w alignment_result.txt
 
 Przykładowy plik wejściowy:
