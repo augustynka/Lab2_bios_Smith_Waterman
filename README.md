@@ -54,9 +54,10 @@ Wynikiem pożądanym jest najwyższy możliwy score.
 
 
 **Przykład użycia** 
+
 Wprowadzenie danych: C:\Users\Patrycja\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\Patrycja\PycharmProjects\pythonProject\main.py 
 
-Podaj nazwę pliku FASTA (z rozszerzeniem fa lub fasta): C:\Users\Patrycja\Downloads\seq1.fasta
+Podaj nazwę pliku FASTA (z rozszerzeniem fa lub fasta): para_sekwencji.fasta
 
 Podaj wartość gap: -2
 
@@ -67,6 +68,7 @@ Podaj wartość match: 1
 Wynik dopasowania zapisany w alignment_result.txt
 
 Przykładowy plik wejściowy:
+
 >1MBO_1|Chain A|MYOGLOBIN|Physeter catodon (9755)
 VLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGDFGADAQGAMNKALELFRKDIAAKYKELGYQG
 >2MB0_1|Chain A[auth B]|RNA-binding motif protein, X chromosome|Homo sapiens (9606)
@@ -76,5 +78,8 @@ MVEADRPGKLFIGGLNTETNEKALEAVFGKYGRIVEVLLMKDRETNKSRGFAFVTFESPADAKDAARDMNGKSLDGKAIK
 Przykładowy plik wyjściowy:
 
 Sekwencja 1: VL--------S--------------------------------------E---------G--------------E---------WQLVLHVWAKV-E-A-DVAGHGQD-ILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTAL--GAILKKKGHHEAELKP-L-AQSH-ATKHKIPIKYLEFI-SEA-IIHVLHSR-HPGDFGADAQGA-MNKALELFRK--DIAAKYKELGY-Q
+
 Sekwencja 2: --VEADRPGK-LFIGGLNTETNEKALEAVFGKYGRIVEVLLMKDRETNK-SRGFAFVTF-ESPADAKDAARDMN-GKSLDGKAI-----------K-V-E--------Q---------------------------------------------AT----------------K-P----S--------------F---E--------S------------G----------RR-----------G-
+
+Max Score: 429
 
