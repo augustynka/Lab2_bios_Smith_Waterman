@@ -41,7 +41,7 @@ Sxi,yj - scoring (punktacja za dopasowanie lub niedopasowanie)
 G - kara za przerwę
 
 
-Źródło:https://www.researchgate.net/figure/Smith-Waterman-local-alignment-example-A-shows-an-empty-matrix-initialized-for-a_fig2_24309044
+Przykładowa macierz: https://www.researchgate.net/figure/Smith-Waterman-local-alignment-example-A-shows-an-empty-matrix-initialized-for-a_fig2_24309044
 
 Wynikiem pożądanym jest najwyższy możliwy score.
 
