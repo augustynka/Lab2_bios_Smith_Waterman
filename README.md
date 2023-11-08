@@ -15,7 +15,8 @@ Dane wyjściowe: plik .txt z wynikami dopasowania w formie zmodyfikowanych sekwe
 **Sposób użycia programu:** 
 
 **1.** Uruchom program w terminalu lub interpreterze Pythona.
-  **2.** Program poprosi o podanie nazwy pliku FASTA zawierającego dwie sekwencje. Plik powinien być w formacie FASTA i posiadać rozszerzenie ".fa" lub ".fasta".
+
+**2.** Program poprosi o podanie nazwy pliku FASTA zawierającego dwie sekwencje. Plik powinien być w formacie FASTA i posiadać rozszerzenie ".fa" lub ".fasta".
 **3.** Jeśli plik o podanej nazwie istnieje, program poprosi Cię o podanie trzech parametrów wartości liczbowych:
 - gap
 - mismatch
