@@ -59,7 +59,7 @@ Wprowadzenie danych: C:\Users\Patrycja\PycharmProjects\pythonProject\venv\Script
 
 Podaj nazwę pliku FASTA (z rozszerzeniem fa lub fasta): para_sekwencji.fasta
 
-Podaj wartość gap: -2
+Podaj wartość gap: 0
 
 Podaj wartość mismatch: -1
 
@@ -78,9 +78,10 @@ MVEADRPGKLFIGGLNTETNEKALEAVFGKYGRIVEVLLMKDRETNKSRGFAFVTFESPADAKDAARDMNGKSLDGKAIK
 
 Przykładowy plik wyjściowy:
 
-Sekwencja 1: VL--------S--------------------------------------E---------G--------------E---------WQLVLHVWAKV-E-A-DVAGHGQD-ILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTAL--GAILKKKGHHEAELKP-L-AQSH-ATKHKIPIKYLEFI-SEA-IIHVLHSR-HPGDFGADAQGA-MNKALELFRK--DIAAKYKELGY-Q
+Sekwencja 1: VEAD--VAG-HGQDIL-I--RL--FKSHPET-LEK-FDRFKHLKTEA---EMK-ASEDLKKHG--V-TVLTAL-GAILK--KKGHHE--AELKPLAQS---HA--TKHKIPIKYLEFISEAIIHVLHSRHP-GDFGA-DAQGA--MN-K-AL--ELFRK-DI----A-AK---YKE-LG--YQG
 
-Sekwencja 2: --VEADRPGK-LFIGGLNTETNEKALEAVFGKYGRIVEVLLMKDRETNK-SRGFAFVTF-ESPADAKDAARDMN-GKSLDGKAI-----------K-V-E--------Q---------------------------------------------AT----------------K-P----S--------------F---E--------S------------G----------RR-----------G-
+Sekwencja 2: VEADRP--GK-----LFIGG-LNT-----ETN-EKA------L--EAVFG--KY--------GRIVE-VL--LM----KDR-----ETN---K----SRGF-AFVT----------F--E-------S--PA-D--AKDA--ARDMNGKS-LDG----KA-IKVEQAT-KPSF--ES-GRR--G
 
-Max Score: 429
+
+Max Score: 47
 
