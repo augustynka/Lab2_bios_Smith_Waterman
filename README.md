@@ -17,23 +17,34 @@ Dane wyjściowe: plik .txt z wynikami dopasowania w formie zmodyfikowanych sekwe
 **1.** Uruchom program w terminalu lub interpreterze Pythona.
 
 **2.** Program poprosi o podanie nazwy pliku FASTA zawierającego dwie sekwencje. Plik powinien być w formacie FASTA i posiadać rozszerzenie ".fa" lub ".fasta".
+
 **3.** Jeśli plik o podanej nazwie istnieje, program poprosi Cię o podanie trzech parametrów wartości liczbowych:
 - gap
 - mismatch
 - match
+
 **4.** Program przeprowadzi dopasowanie sekwencji z użyciem algorytmu Smitha-Watermana i zapisze wynik dopasowania i wartość maksymalnego wyniku (score) do pliku "alignment_result.txt". 
+
 
 **Działanie programu:**
 Podanie nazwy pliku.
+
 Program weryfikuje poprawność wprowadzonych danych.
+
 Podanie wartości gap - ilość punktów karnych za przerwę w sekwencji.
+
 Podanie wartości mismatch - ilość punktów za elementy niedopasowanie w sekwencji.
+
 Podanie wartości match - ilość punktów za elementy pokrywające się w sekwencji.
+
 Odczyt z pliku FASTA.
 - sprawdzenie, czy plik zawiera dwie sekwencje
+
 Przeprowadzenie algorytmu Smith-Waterman:
 H i j = max{H i-1, j-1 + s(a i, b j ); H i-k, j - W k ; H i, j-1 - W 1 ;0}
+
 Algorytm działa na macierzy o wymiarach i,j (długości sekwencji), początkowo wypełnionej zerami w pierwszej kolumnie i pierwszym wierszu.
+
 Komórki macierzy wypełniamy maksymalną możliwą wartością, zgodnie ze wzorem:
 
 Mi,j=max{Mi-1,j-1+S-i,yj	Mi-1,j+G	Mi,j-1+G	0}
