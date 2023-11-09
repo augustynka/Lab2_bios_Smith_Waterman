@@ -20,8 +20,8 @@ def smith_waterman(seq1, seq2, gap, match, mismatch):
                 score = matrix[i - 1][j - 1] + match
             else:
                 score = max(
-                    matrix[i - 1][j] - gap,
-                    matrix[i][j - 1] - gap,
+                    matrix[i - 1][j] + gap,
+                    matrix[i][j - 1] + gap,
                     matrix[i - 1][j - 1] + mismatch,
                     0
                 )
@@ -34,25 +34,25 @@ def smith_waterman(seq1, seq2, gap, match, mismatch):
     doneseq1, doneseq2 = [], []
     i, j = max_i, max_j
 
-    while i > 0 and j > 0 and matrix[i][j] > 0:
+    while i >= 0 and j >= 0 and matrix[i][j] > 0:
         if seq1[i - 1] == seq2[j - 1]:
             doneseq1.insert(0, seq1[i - 1])
             doneseq2.insert(0, seq2[j - 1])
             i -= 1
             j -= 1
-        elif matrix[i][j] == matrix[i - 1][j] - gap:
+        elif matrix[i][j] == matrix[i - 1][j] + gap:
             doneseq1.insert(0, seq1[i - 1])
             doneseq2.insert(0, '-')
             i -= 1
-        elif matrix[i][j] == matrix[i][j - 1] - gap:
+        elif matrix[i][j] == matrix[i][j - 1] + gap:
             doneseq1.insert(0, '-')
             doneseq2.insert(0, seq2[j - 1])
             j -= 1
         else:
-            doneseq1.insert(0, seq1[i - 1])
-            doneseq2.insert(0, seq2[j - 1])
-            i -= 1
-            j -= 1
+           doneseq1.insert(0, seq1[i - 1])
+           doneseq2.insert(0, seq2[j - 1])
+           i -= 1
+           j -= 1
 
     return ''.join(doneseq1), ''.join(doneseq2), max_score
 
@@ -66,7 +66,7 @@ def main():
             if choice == '1':
                 break
         else:
-            gap= get_numeric_input("Podaj wartość Gap: ")
+            gap = get_numeric_input("Podaj wartość Gap: ")
             mismatch = get_numeric_input("Podaj wartość Mismatch: ")
             match = get_numeric_input("Podaj wartość Match: ")
 
